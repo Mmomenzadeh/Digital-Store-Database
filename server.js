@@ -214,6 +214,6 @@ server.post("/auth/refresh-token", async function (req, res, next) {
 // Use default router (CRUDs of db.json)
 server.use(router);
 
-server.listen(3002, () => {
-  console.log("Customized JSON-Server is running at http://localhost:3002/");
-});
+server.listen(process.env.PORT || 8000, () => {
+  console.log(`Customized JSON-Server is running at ${rocess.env.PORT || 8000}`);
+  });
