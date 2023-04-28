@@ -215,5 +215,9 @@ server.post("/auth/refresh-token", async function (req, res, next) {
 server.use(router);
 
 server.listen(process.env.PORT || 8000, () => {
-  console.log(`Customized JSON-Server is running at ${rocess.env.PORT || 8000}`);
-  });
+  console.log(
+    `Customized JSON-Server is running at ${process.env.PORT || 8000}`
+  );
+});
+
+module.exports = server;
